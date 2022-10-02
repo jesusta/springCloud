@@ -6,8 +6,10 @@ spring:
     config:
       server:
         git:
-          url:
+          url: https://github.com/jesusta/springCloud.git
           searchPath: config-data
+          username: ${GIT_USERNAME}
+          password: ${YOU_PASSWORD}
 
 
 
