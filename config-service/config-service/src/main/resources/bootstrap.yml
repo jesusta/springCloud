@@ -1,0 +1,13 @@
+sever:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          url:
+          searchPath: config-data
+
+
+
