@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.sshd:sshd-sftp:2.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-sftp/2.7.0/c9eff7145e20b338c1dd6aca36ba93ed7c0147c/sshd-sftp-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-sftp/2.7.0/b30a960ca04919541a718da2427cc0f441f42d5d/sshd-sftp-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

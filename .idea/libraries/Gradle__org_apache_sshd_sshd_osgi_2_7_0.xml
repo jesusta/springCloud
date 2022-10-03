@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.sshd:sshd-osgi:2.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-osgi/2.7.0/a101aad0f79ad424498098f7e91c39d3d92177c1/sshd-osgi-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.sshd/sshd-osgi/2.7.0/3c07826d4ebf733036a478debbf56172a360097a/sshd-osgi-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
