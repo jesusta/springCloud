@@ -5,6 +5,8 @@ import com.jesusta.biblioteca.categoria.entity.CategoriaEntity;
 import com.jesusta.biblioteca.categoria.mapper.MapStructMapper;
 import com.jesusta.biblioteca.categoria.repository.CategoriaRepository;
 import com.jesusta.biblioteca.categoria.service.CategoriaService;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +19,7 @@ public class CategoriaSeviceImpl implements CategoriaService {
     @Autowired
     CategoriaRepository categoriaRepository;
     @Autowired(required = false)
-    MapStructMapper mapStructMapper;
+    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);;
 
     @Override
     public CategoriaDto getByid(Long id) {
@@ -26,7 +28,8 @@ public class CategoriaSeviceImpl implements CategoriaService {
           //  throw  new NotFountIDException( "No exite el empleado con id : "+id);
             return null;
         }
-        return mapStructMapper.categoriaEntityToCategoriaDto(optEntity.get());
+        CategoriaDto categoriaDto=mapStructMapper.categoriaEntityToCategoriaDto(optEntity.get());
+        return categoriaDto ;
     }
 
     @Override
