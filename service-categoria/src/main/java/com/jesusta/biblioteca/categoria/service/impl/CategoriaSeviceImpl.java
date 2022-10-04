@@ -16,7 +16,7 @@ import java.util.Optional;
 public class CategoriaSeviceImpl implements CategoriaService {
     @Autowired
     CategoriaRepository categoriaRepository;
-    @Autowired
+    @Autowired(required = false)
     MapStructMapper mapStructMapper;
 
     @Override

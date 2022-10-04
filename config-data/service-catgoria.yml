@@ -7,3 +7,7 @@ spring:
     password:
   jpa:
     show-sql: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
