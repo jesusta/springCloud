@@ -8,7 +8,7 @@ import java.util.Map;
 public interface CategoriaService {
     public CategoriaDto getByid(Long id);
     public List<CategoriaDto> getall();
-    public Map<String, Object> create(CategoriaDto categoriaDto);
+    public CategoriaDto create(CategoriaDto categoriaDto);
     public Map<String, Object> delete(Long id);
-    public Map<String, Object> update(CategoriaDto categoriaDto);
+    public CategoriaDto update(CategoriaDto categoriaDto);
 }
