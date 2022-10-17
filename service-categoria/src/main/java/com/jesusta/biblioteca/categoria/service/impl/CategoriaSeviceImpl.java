@@ -7,7 +7,6 @@ import com.jesusta.biblioteca.categoria.exception.NotFoundException;
 import com.jesusta.biblioteca.categoria.mapper.MapStructMapper;
 import com.jesusta.biblioteca.categoria.repository.CategoriaRepository;
 import com.jesusta.biblioteca.categoria.service.CategoriaService;
-import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
