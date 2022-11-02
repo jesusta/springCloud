@@ -9,20 +9,22 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.function.Executable;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import org.mockito.Mockito;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.util.Assert;
 
+import javax.validation.constraints.AssertTrue;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 class CategoriaSeviceImplTest {
@@ -51,12 +53,17 @@ class CategoriaSeviceImplTest {
     void getByidExction() {
         CategoriaEntity categoriaEntity = FactoryCategoria.getCategoriaEntity();
         Optional<CategoriaEntity> categoriaEntityOptional= Optional.of(categoriaEntity);
-        when(categoriaRepository.findById(any(Long.class))).thenReturn(categoriaEntityOptional);
+
+        when(categoriaRepository.findById(any(Long.class))).thenThrow(new NotFoundException("No exite el categoria con id "+2l));
+
         try {
             CategoriaDto categoriaDto= categoriaSevice.getByid(2l);
-        }catch (NotFoundException e){
+
+        }catch (Exception e){
             System.out.println(e.getMessage());
-            Assertions.assertNotNull(e);
+            Assertions.assertTrue(e instanceof NotFoundException);
+            Assertions.assertEquals("No exite el categoria con id "+2l,e.getMessage());
+
         }
 
     }
