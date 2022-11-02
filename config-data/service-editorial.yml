@@ -1,5 +1,5 @@
 server:
-  port: 1920
+  port: 1922
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/biblioteca?serverTimezone=America/Bogota
