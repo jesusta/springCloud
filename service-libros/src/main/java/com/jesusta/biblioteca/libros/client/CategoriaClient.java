@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name = "service-catgoria")
-@RequestMapping("/Categoria")
+@FeignClient(name = "service-catgoria",path = "/Categoria")
+
 public interface CategoriaClient {
     @GetMapping("/get/{id}")
-    public CategoriaDto fingById(@PathVariable(name = "id") Long id);
+    public ResponseEntity<CategoriaDto> fingById(@PathVariable(name = "id") Long id);
 }

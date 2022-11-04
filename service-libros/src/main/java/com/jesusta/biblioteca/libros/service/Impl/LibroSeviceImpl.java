@@ -20,10 +20,11 @@ import java.util.Optional;
 public class LibroSeviceImpl implements LibroSevice {
     @Autowired
     LibrosRepository librosRepository;
-    @Autowired
-    CategoriaClient categoriaClient;
+
     @Autowired
     EditorialClient editorialClient;
+    @Autowired
+    CategoriaClient categoriaClient;
     @Autowired(required = false)
     MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);
 
@@ -32,8 +33,8 @@ public class LibroSeviceImpl implements LibroSevice {
         if(optEntity.isEmpty()==true){
             throw  new NotFoundException( "No exite el Editoria con id : "+id);
         }
-        CategoriaDto categoriaDto=categoriaClient.fingById(optEntity.get().getCategorias_id());
-        EditorialDto editorialDto=editorialClient.fingById(optEntity.get().getEditoriales_id());
+        CategoriaDto categoriaDto=categoriaClient.fingById(optEntity.get().getCategorias_id()).getBody();
+        EditorialDto editorialDto=editorialClient.fingById(optEntity.get().getEditoriales_id()).getBody();
         LibrosDto librosDto = mapStructMapper.libroEntityToLibroDto(optEntity.get());
         librosDto.setCategoriaDto(categoriaDto);
         librosDto.setEditorialDto(editorialDto);

@@ -1,5 +1,6 @@
 package com.jesusta.biblioteca.libros.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
@@ -24,9 +25,9 @@ public class LibrosDto {
     @NotNull(message = "El parametro autor no puede ser nulo")
     @NotEmpty(message = "El parametro autor no puede ser vacio")
     private String autor;
-
+    @JsonProperty("Categoria")
     private CategoriaDto categoriaDto;
-
+    @JsonProperty("Editorial")
     private EditorialDto editorialDto;
 
     private Date created;

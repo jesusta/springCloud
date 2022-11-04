@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.Date;
 @Data
+
 public class CategoriaDto {
     private Long id;
     private String nombre;
