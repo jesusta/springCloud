@@ -6,5 +6,5 @@ import org.mapstruct.Mapper;
 
 @Mapper
 public interface MapStructMapper {
-    LibrosDto LibroEntityToLibroDto(LibrosEntity librosEntity);
+    LibrosDto libroEntityToLibroDto(LibrosEntity librosEntity);
 }

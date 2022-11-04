@@ -25,7 +25,7 @@ public class LibroSeviceImpl implements LibroSevice {
     @Autowired
     EditorialClient editorialClient;
     @Autowired(required = false)
-    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);;
+    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);
 
     public LibrosDto getByid(Long id) {
         Optional< LibrosEntity> optEntity =librosRepository.findById(id);
@@ -34,7 +34,7 @@ public class LibroSeviceImpl implements LibroSevice {
         }
         CategoriaDto categoriaDto=categoriaClient.fingById(optEntity.get().getCategorias_id());
         EditorialDto editorialDto=editorialClient.fingById(optEntity.get().getEditoriales_id());
-        LibrosDto librosDto = mapStructMapper.LibroEntityToLibroDto(optEntity.get());
+        LibrosDto librosDto = mapStructMapper.libroEntityToLibroDto(optEntity.get());
         librosDto.setCategoriaDto(categoriaDto);
         librosDto.setEditorialDto(editorialDto);
         return librosDto;

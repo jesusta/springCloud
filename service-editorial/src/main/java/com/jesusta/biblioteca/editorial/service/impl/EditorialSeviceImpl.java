@@ -18,7 +18,7 @@ public class EditorialSeviceImpl implements EditorialService {
     @Autowired
     EditorialRepository editorialRepository;
     @Autowired(required = false)
-    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);;
+    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);
 
     @Override
     public EditorialDto getByid(Long id) {

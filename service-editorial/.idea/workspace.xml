@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2ebed8-c358-40b2-b16d-eff7d11d6e2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/CategoriaClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/EditorialClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/controller/LibroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/CategoriaDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/EditorialDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/LibrosDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/exception/ErrorInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/entity/LibrosEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/exception/AppExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/exception/InvalidDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/mapper/MapStructMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/repository/LibrosRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/Impl/LibroSeviceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/LibroSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jesusta/biblioteca/editorial/service/impl/EditorialSeviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jesusta/biblioteca/editorial/service/impl/EditorialSeviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/CategoriaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/CategoriaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/mapper/MapStructMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/mapper/MapStructMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/Impl/LibroSeviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/Impl/LibroSeviceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
