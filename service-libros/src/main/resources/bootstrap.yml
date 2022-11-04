@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: service-libros
+  cloud:
+    config:
+      uri: http://localhost:8081
