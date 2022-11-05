@@ -25,10 +25,14 @@ public class LibrosDto {
     @NotNull(message = "El parametro autor no puede ser nulo")
     @NotEmpty(message = "El parametro autor no puede ser vacio")
     private String autor;
+    private Long editoriales_id;
+    private Long categorias_id;
     @JsonProperty("Categoria")
     private CategoriaDto categoriaDto;
     @JsonProperty("Editorial")
     private EditorialDto editorialDto;
+
+
 
     private Date created;
     private Date modified;

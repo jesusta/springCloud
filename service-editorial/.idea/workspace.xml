@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2ebed8-c358-40b2-b16d-eff7d11d6e2b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/HystrixFallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-data/service-libros.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/service-libros.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/CategoriaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/CategoriaClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/EditorialClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/client/EditorialClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/controller/LibroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/controller/LibroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/CategoriaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/CategoriaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/EditorialDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/EditorialDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/LibrosDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/dto/LibrosDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/mapper/MapStructMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/mapper/MapStructMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/repository/LibrosRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/repository/LibrosRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/Impl/LibroSeviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/Impl/LibroSeviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/LibroSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/service/LibroSevice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +73,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/Users/Usuario/Desktop/Spring service/service-editorial",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Usuario/Desktop/Spring service/service-editorial&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

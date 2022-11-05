@@ -14,6 +14,7 @@ import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -31,13 +32,26 @@ public class LibroSeviceImpl implements LibroSevice {
     public LibrosDto getByid(Long id) {
         Optional< LibrosEntity> optEntity =librosRepository.findById(id);
         if(optEntity.isEmpty()==true){
-            throw  new NotFoundException( "No exite el Editoria con id : "+id);
+            throw  new NotFoundException( "No exite el libro con id : "+id);
         }
-        CategoriaDto categoriaDto=categoriaClient.fingById(optEntity.get().getCategorias_id()).getBody();
-        EditorialDto editorialDto=editorialClient.fingById(optEntity.get().getEditoriales_id()).getBody();
+        CategoriaDto categoriaDto=categoriaClient.fingCategoriaById(optEntity.get().getCategorias_id()).getBody();
+        EditorialDto editorialDto=editorialClient.fingEditorialById(optEntity.get().getEditoriales_id()).getBody();
         LibrosDto librosDto = mapStructMapper.libroEntityToLibroDto(optEntity.get());
         librosDto.setCategoriaDto(categoriaDto);
         librosDto.setEditorialDto(editorialDto);
         return librosDto;
+    }
+
+    @Override
+    public List<LibrosDto> gellAll() {
+        List<LibrosDto> librosDtos;
+        List<LibrosEntity> librosEntities =  librosRepository.findAll();
+        librosDtos = mapStructMapper.librolistaEntityToLibroDtolista(librosEntities);
+        librosDtos.stream().forEach(librosDto -> {
+                    librosDto.setCategoriaDto(categoriaClient.fingCategoriaById(librosDto.getCategorias_id()).getBody());
+                    librosDto.setEditorialDto(editorialClient.fingEditorialById(librosDto.getEditoriales_id()).getBody());
+                }
+        );
+        return librosDtos;
     }
 }
