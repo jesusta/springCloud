@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2ebed8-c358-40b2-b16d-eff7d11d6e2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../config-data/service-catgoria.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/service-catgoria.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-data/service-editorial.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/service-editorial.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-data/service-libros.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-data/service-libros.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-libros/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../service-libros/src/main/java/com/jesusta/biblioteca/libros/ServiceLibrosApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-geteway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../service-geteway/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
