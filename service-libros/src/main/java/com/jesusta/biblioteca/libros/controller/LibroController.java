@@ -43,6 +43,6 @@ public class LibroController {
         if (bindingResult.hasErrors()) {
             throw new InvalidDataException(bindingResult.getAllErrors().get(0).getDefaultMessage());
         }
-        return  ResponseEntity.ok(libroSevice.createLibro(librosDto));
+        return  ResponseEntity.ok(libroSevice.updateLibro(librosDto));
     }
 }
