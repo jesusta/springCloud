@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("Libros")
@@ -30,7 +31,18 @@ public class LibroController {
         if (bindingResult.hasErrors()) {
             throw new InvalidDataException(bindingResult.getAllErrors().get(0).getDefaultMessage());
         }
-        return  null;
+        return  ResponseEntity.ok(libroSevice.createLibro(librosDto));
+    }
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Map<Object,String>> DeleteById(@PathVariable(name = "id") Long id){
+        return ResponseEntity.ok(libroSevice.deteteLibrosByid(id));
     }
 
+    @PutMapping("/put")
+    public ResponseEntity<LibrosDto> UpdateLibro(@Valid @RequestBody LibrosDto librosDto, BindingResult bindingResult){
+        if (bindingResult.hasErrors()) {
+            throw new InvalidDataException(bindingResult.getAllErrors().get(0).getDefaultMessage());
+        }
+        return  ResponseEntity.ok(libroSevice.createLibro(librosDto));
+    }
 }

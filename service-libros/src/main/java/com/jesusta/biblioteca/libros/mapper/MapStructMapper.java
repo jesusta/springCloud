@@ -10,4 +10,6 @@ import java.util.List;
 public interface MapStructMapper {
     LibrosDto libroEntityToLibroDto(LibrosEntity librosEntity);
     List<LibrosDto> librolistaEntityToLibroDtolista(List<LibrosEntity> librosEntities);
+
+    LibrosEntity libroDtoTolibroEntity(LibrosDto librosDto);
 }
