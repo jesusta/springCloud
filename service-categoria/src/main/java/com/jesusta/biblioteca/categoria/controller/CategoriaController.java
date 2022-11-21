@@ -19,19 +19,24 @@ import java.util.Map;
 public class CategoriaController {
     @Autowired
     CategoriaService categoriaService;
+
+    @CrossOrigin(origins = "*")
     @GetMapping("/get/{id}")
     public ResponseEntity<CategoriaDto> fingById(@PathVariable (name = "id") Long id){
         return ResponseEntity.ok(categoriaService.getByid(id));
     }
+    @CrossOrigin(origins = "*")
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Map<String, Object>> delete(@PathVariable (name = "id") Long id){
         return ResponseEntity.ok(categoriaService.delete(id));
     }
+    @CrossOrigin(origins = "*")
     @GetMapping("/get")
     public ResponseEntity<List<CategoriaDto>> fingAll(){
 
         return ResponseEntity.ok(categoriaService.getall());
     }
+    @CrossOrigin(origins = "*")
     @PutMapping("/put")
     public ResponseEntity<CategoriaDto> update(@Valid @RequestBody CategoriaDto categoriaDto, BindingResult bindingResult ){
         if (bindingResult.hasErrors()) {
@@ -39,6 +44,7 @@ public class CategoriaController {
         }
         return ResponseEntity.ok(categoriaService.update(categoriaDto));
     }
+    @CrossOrigin(origins = "*")
     @PostMapping("/post")
     public ResponseEntity<CategoriaDto> create(@Valid @RequestBody CategoriaDto categoriaDto, BindingResult bindingResult ) {
         if (bindingResult.hasErrors()) {
