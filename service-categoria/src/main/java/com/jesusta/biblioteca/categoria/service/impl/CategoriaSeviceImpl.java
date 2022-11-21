@@ -18,7 +18,7 @@ public class CategoriaSeviceImpl implements CategoriaService {
     @Autowired
     CategoriaRepository categoriaRepository;
     @Autowired(required = false)
-    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);;
+    MapStructMapper mapStructMapper  = Mappers.getMapper(MapStructMapper.class);
 
     @Override
     public CategoriaDto getByid(Long id) {

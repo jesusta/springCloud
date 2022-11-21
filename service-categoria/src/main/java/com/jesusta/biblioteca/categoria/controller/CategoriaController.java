@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/Categoria")
 public class CategoriaController {
     @Autowired
@@ -28,6 +29,7 @@ public class CategoriaController {
     }
     @GetMapping("/get")
     public ResponseEntity<List<CategoriaDto>> fingAll(){
+
         return ResponseEntity.ok(categoriaService.getall());
     }
     @PutMapping("/put")
