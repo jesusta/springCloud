@@ -18,6 +18,7 @@ spring:
               - POST
               - DELETE
               - PUT
+              - OPTIONS
       discovery:
         locator:
           enabled: true
